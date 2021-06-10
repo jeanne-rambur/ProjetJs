@@ -16,9 +16,23 @@
             <div class="page-header" style="text-align: center; margin-top: 0px;">
                 <h1 style="margin-top: 0px;">Blind Test</h1>
             </div>
-            <h1>{{ info }}</h1>
         </div>
     </div>
+    <script id="user-profile-template" type="text/x-handlebars-template">
+        <h1>Logged in as {{display_name}}</h1>
+        <div class="media">
+            <div class="pull-left">
+                <img class="media-object" width="150" src="{{images.0.url}}" />
+            </div>
+            <div class="media-body">
+                <dl class="dl-horizontal">
+                    <dt>Display name</dt>
+                    <dd class="clearfix">{{name}}</dd>
+
+                </dl>
+            </div>
+        </div>
+    </script>
 
 </body>
 
